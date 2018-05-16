@@ -1,5 +1,5 @@
 
-public class Paiktis {
+public abstract class Paiktis {
 
 private String name;
 private int thesi;
@@ -49,5 +49,19 @@ public void EnimerosiThesis(int zari)
 {
   thesi=(thesi+zari) % 32;	
 }
+
+
+// abstrac μέθοδοι
+
+abstract public int getTrexon_poso();
+abstract public int getArithmos_listiwn();
+abstract public void IncTrexonPoso();
+abstract public void IncArithmosListeiwn();
+abstract public void Midenismos_Trexon_Poso();
+abstract public void Midenismos_Arithmos_listion();
+
+
+
+
 
 }

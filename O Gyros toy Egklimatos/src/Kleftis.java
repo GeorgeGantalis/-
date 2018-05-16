@@ -19,7 +19,7 @@ public int getArithmos_listiwn() {
 	return arithmos_listiwn;
 }
 
- public void IncTrexonPoso(int poso_listias)
+public void IncTrexonPoso(int poso_listias)
  {
 	 trexon_poso= trexon_poso+poso_listias;
  }
@@ -38,5 +38,17 @@ public int getArithmos_listiwn() {
  {
 	 arithmos_listiwn=0;
  }
- 
+
+
+@Override
+public void IncTrexonPoso() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+
+
+
+
 }

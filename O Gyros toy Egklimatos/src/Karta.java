@@ -21,7 +21,6 @@ private ArrayList <String> kartes_astunomou;
 	public ArrayList<String> getKartes_astunomou() {
 		return kartes_astunomou;
 	}
-
 	public int Epilogi_Kartas( Paiktis p)
 	{
 		int apotelesma=0;
@@ -60,4 +59,27 @@ private ArrayList <String> kartes_astunomou;
 	}
 	
 	
+	public int getPoso() {
+		return 0;
+	}
+
+	public int getXronos_anamonis() {
+		return 0;
+	}
+
+	public int getZoes_ktiriou() {
+		return 0;
+	}
+	
+	public boolean diarkia_anamonis_ktiriou()
+	{
+		return false;
+	}
+
+
+	@Override
+	public void epilogi_1or2or3() {
+		// TODO Auto-generated method stub
+		
+	}
 }

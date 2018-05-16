@@ -1,38 +1,35 @@
 import java.util.ArrayList;
 
-public class Ktirio extends Koutaki{
-	
-	private int poso;
-	private int xronos_anamonis;
-	private int Zoes_ktiriou;
+public class Afetiria extends Koutaki {
 
-	public Ktirio(String onoma, int poso, int xronos_anamonis, int zoes_ktiriou) {
+	
+	public Afetiria(String onoma) {
 		super(onoma);
-		this.poso = poso;
-		this.xronos_anamonis = xronos_anamonis;
-		Zoes_ktiriou = zoes_ktiriou;
+
 	}
 
+	@Override
 	public int getPoso() {
-		return poso;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
+	@Override
 	public int getXronos_anamonis() {
-		return xronos_anamonis;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
+	@Override
 	public int getZoes_ktiriou() {
-		return Zoes_ktiriou;
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
-	public boolean diarkia_anamonis_ktiriou()
-	{
-		if (xronos_anamonis > 0)
-		{
-			xronos_anamonis --;
-			return false;
-		}
-		else return true;
+
+	@Override
+	public boolean diarkia_anamonis_ktiriou() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override
@@ -59,4 +56,5 @@ public class Ktirio extends Koutaki{
 		
 	}
 
+	
 }

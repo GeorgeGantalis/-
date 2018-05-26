@@ -74,26 +74,39 @@ public class Screen1 extends JFrame{
 				
 		ButtonListener listener = new ButtonListener();
 		btnPaikse.addActionListener(listener);
+		btnEksodos.addActionListener(listener);
+		btnKanones.addActionListener(listener);
 		
-		
+		this.setLocationRelativeTo(null);
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
 		this.setSize(875,730);  //διαστάσεις
 		this.setTitle("My first Frame!"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}	
+	
+	
 		
 		class ButtonListener implements ActionListener {
 			public void actionPerformed(ActionEvent e) {
-			if (e.getActionCommand().equals("KANONES")) {
-				System.out.println("paok");
-                JOptionPane.showMessageDialog(null, "Οι κανονες είναι οι εξης:");
-			}	
+			
 			if (e.getActionCommand().equals("PAIKSE")) {
 				     new Screen2();
-				 }
+			}
 			
+			if(e.getActionCommand().equals("KANONES"))
+			{
+			  JOptionPane.showMessageDialog(null, "Κανονες");
+			}
+			
+			if(e.getActionCommand().equals("EXODOS"))
+			{			
+				System.exit(0);
+			}
 			
 			}
+			
+			
+
 		
 		
 	}

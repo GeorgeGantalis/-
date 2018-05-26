@@ -51,6 +51,12 @@ public void EnimerosiThesis(int zari)
 }
 
 
+public void printInfo()
+{
+	
+	System.out.println("the name of player is:" +getName());
+}
+
 // abstrac μέθοδοι
 
 abstract public int getTrexon_poso();

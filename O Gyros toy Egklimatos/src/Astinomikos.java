@@ -5,6 +5,13 @@ public class Astinomikos extends Paiktis{
 		super(name, thesi, poso, zoes);
 	}
 
+	
+	
+	public void printInfo()
+	{
+		super.printInfo();
+	}
+	
 	public int getTrexon_poso() {
 		return 0;
 	}

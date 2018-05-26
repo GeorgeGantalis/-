@@ -9,7 +9,11 @@ private int arithmos_listiwn;
     this.trexon_poso=trexon_poso;
  }
 
-
+public void printInfo()
+{
+	super.printInfo();
+}
+ 
 public int getTrexon_poso() {
 	return trexon_poso;
 }

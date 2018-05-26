@@ -15,6 +15,9 @@ public class tablo {
 	 tabloPaixnidiou.add(e);
  }
  
+ 
+ 
+ 
  public void kiriaRoi(ArrayList<Paiktis> paiktes,Karta card)
  {
 	 int trexon_paiktis=0;

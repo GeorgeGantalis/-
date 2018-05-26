@@ -1,6 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class main {
 
@@ -9,9 +10,8 @@ public class main {
       ArrayList <String> kartesAstunomou = new ArrayList<String>();
       
       
-      Kleftis paris = new Kleftis("paris",0,0,4,0,0);
       
-      //Αρχικοποίηση της λίστας της κάρτες
+        //Αρχικοποίηση της λίστας της κάρτες
       
 		kartesKlefti.add("Κάρτα ασυλίας");
 		kartesKlefti.add("Βγες από την φυλακή! Χρησιμοποίησε αυτή την κάρτα όταν σε πιάσει ο αστυνόμος");
@@ -127,10 +127,9 @@ public class main {
 	    t.addKoutaki(house11_31);  
 	    
 	    
-	    
-	   new Screen1();
-	  //  new Screen2();
-	    
+
+	     new Screen1();
+	  
 	    
 	    
 	}

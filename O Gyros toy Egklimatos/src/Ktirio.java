@@ -13,6 +13,11 @@ public class Ktirio extends Koutaki{
 		Zoes_ktiriou = zoes_ktiriou;
 	}
 
+	public void DecZwes()
+	{
+		Zoes_ktiriou--;
+	}
+	
 	public int getPoso() {
 		return poso;
 	}

@@ -24,9 +24,11 @@ public class Screen2 extends JFrame{
 	private JTextField textField_3;
 	private JButton btnEnarksi;
 	private JButton btnPiso;
+	private tablo tablPaix;
 	
-	
-	public Screen2() {
+	public Screen2(tablo t) {
+		tablPaix=t;
+		
 		setSize(new Dimension(875, 730));
 		getContentPane().setLayout(null);
 		
@@ -84,11 +86,12 @@ public class Screen2 extends JFrame{
 		btnEnarksi.addActionListener(listener);
 		btnPiso.addActionListener(listener);
 		
-		this.setLocationRelativeTo(null);
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
 		this.setSize(875,730);  //διαστάσεις
 		this.setTitle("My first Frame!"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+
 	}
 	
 
@@ -107,27 +110,31 @@ public class Screen2 extends JFrame{
 			
 			if(e.getActionCommand().equals("ENARXI")) {
 				
-				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4); 
-				Astinomikos astinomikos2 = new Astinomikos (name2,16,0,4); 
+				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4,16); 
+				Astinomikos astinomikos2 = new Astinomikos (name2,16,0,4,16); 
 
-				Kleftis kleftis1 = new Kleftis(name3,0,0,4,0,0);
-				Kleftis kleftis2 = new Kleftis(name4,0,0,4,0,0);
+				Kleftis kleftis1 = new Kleftis(name3,0,0,4,0,0,0);
+				Kleftis kleftis2 = new Kleftis(name4,0,0,4,0,0,0);
+				
+				tablPaix.addPlayer(kleftis1);
+				tablPaix.addPlayer(astinomikos1);
+				tablPaix.addPlayer(kleftis2);
+				tablPaix.addPlayer(astinomikos2);
 				
 				
-				paiktes.add(astinomikos1);
-				paiktes.add(astinomikos2);
-				paiktes.add(kleftis1);
-				paiktes.add(kleftis2);
 
-				new Table();
+
+				new Table(paiktes,tablPaix);
+				setVisible(false);
 	
 				}
 			if(e.getActionCommand().equals("PISO")){
-			    new Screen1();
+			    new Screen1(tablPaix);
+			    setVisible(false);
 			    }
 	
-              for(int i=0; i<paiktes.size(); i++) {
-            	  paiktes.get(i).printInfo();}
+            //  for(int i=0; i<paiktes.size(); i++) {
+            	//  paiktes.get(i).printInfo();}
               
           
 			

@@ -128,8 +128,7 @@ public class main {
 	    
 	    
 
-	     new Screen1();
-	  
+	     new Screen1(t);
 	    
 	    
 	}

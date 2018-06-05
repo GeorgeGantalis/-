@@ -82,4 +82,11 @@ private ArrayList <String> kartes_astunomou;
 		// TODO Auto-generated method stub
 		
 	}
+
+
+	@Override
+	public void DecZwes() {
+		// TODO Auto-generated method stub
+		
+	}
 }

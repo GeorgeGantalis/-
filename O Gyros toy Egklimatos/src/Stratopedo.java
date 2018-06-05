@@ -69,4 +69,10 @@ public class Stratopedo extends Koutaki{
 		return 0;
 	}
 
+	@Override
+	public void DecZwes() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -3,8 +3,8 @@ private int trexon_poso;
 private int arithmos_listiwn;
 	
  
- public Kleftis(String name, int thesi, int poso, int zoes, int trexon_poso,int arithmos_listwn) {
-	super(name, thesi, poso, zoes);	
+ public Kleftis(String name, int thesi, int poso, int zoes,int proigoumeniThesi, int trexon_poso,int arithmos_listwn) {
+	super(name, thesi, poso, zoes,proigoumeniThesi);	
     this.arithmos_listiwn=arithmos_listiwn;
     this.trexon_poso=trexon_poso;
  }
@@ -44,11 +44,7 @@ public void IncTrexonPoso(int poso_listias)
  }
 
 
-@Override
-public void IncTrexonPoso() {
-	// TODO Auto-generated method stub
-	
-}
+
 
 
 

@@ -56,5 +56,11 @@ public class Afetiria extends Koutaki {
 		
 	}
 
+	@Override
+	public void DecZwes() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }

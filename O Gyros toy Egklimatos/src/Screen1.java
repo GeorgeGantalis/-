@@ -19,9 +19,11 @@ public class Screen1 extends JFrame{
  private JButton btnPaikse;
  private JButton btnKanones;
  private JButton btnEksodos;
-
+ private tablo tablPaix;
  
-	public Screen1() {
+	public Screen1(tablo t ) {
+		tablPaix=t;
+		
 		setSize(new Dimension(875, 721));
 		
 		JButton btnPaikse = new JButton("\u03A0\u0391\u0399\u039E\u0395");
@@ -77,11 +79,12 @@ public class Screen1 extends JFrame{
 		btnEksodos.addActionListener(listener);
 		btnKanones.addActionListener(listener);
 		
-		this.setLocationRelativeTo(null);
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
 		this.setSize(875,730);  //διαστάσεις
 		this.setTitle("My first Frame!"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+
 	}	
 	
 	
@@ -90,7 +93,8 @@ public class Screen1 extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 			
 			if (e.getActionCommand().equals("PAIKSE")) {
-				     new Screen2();
+				     new Screen2(tablPaix);
+				     setVisible(false);
 			}
 			
 			if(e.getActionCommand().equals("KANONES"))
@@ -104,6 +108,9 @@ public class Screen1 extends JFrame{
 			}
 			
 			}
+
+
+
 			
 			
 

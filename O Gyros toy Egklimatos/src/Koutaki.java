@@ -15,7 +15,7 @@ public abstract class Koutaki {
 		return onoma;
 	}
 	
-
+  abstract public void DecZwes();
   abstract	public int getPoso();
   abstract	public int getXronos_anamonis();
   abstract public int getZoes_ktiriou();

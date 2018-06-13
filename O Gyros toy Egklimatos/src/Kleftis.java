@@ -1,10 +1,10 @@
 public class Kleftis extends Paiktis{
-private int trexon_poso;
+private double trexon_poso;
 private int arithmos_listiwn;
 	
  
- public Kleftis(String name, int thesi, int poso, int zoes,int proigoumeniThesi, int trexon_poso,int arithmos_listwn) {
-	super(name, thesi, poso, zoes,proigoumeniThesi);	
+ public Kleftis(String name, int thesi, double poso, int zoes, double trexon_poso,int arithmos_listwn,int cordX,int cordY) {
+	super(name, thesi, poso, zoes,cordX,cordY);	
     this.arithmos_listiwn=arithmos_listiwn;
     this.trexon_poso=trexon_poso;
  }
@@ -14,7 +14,7 @@ public void printInfo()
 	super.printInfo();
 }
  
-public int getTrexon_poso() {
+public double getTrexon_poso() {
 	return trexon_poso;
 }
 
@@ -23,7 +23,7 @@ public int getArithmos_listiwn() {
 	return arithmos_listiwn;
 }
 
-public void IncTrexonPoso(int poso_listias)
+public void IncTrexonPoso(double poso_listias)
  {
 	 trexon_poso= trexon_poso+poso_listias;
  }
@@ -43,12 +43,15 @@ public void IncTrexonPoso(int poso_listias)
 	 arithmos_listiwn=0;
  }
 
+public void PerasmaFavela()
+{
+	arithmos_listiwn=0;
+	this.IncPoso(trexon_poso);
+	trexon_poso=0;
+}
 
-
-
-
-
-
-
+public void DromakiMiosi(){
+	trexon_poso=trexon_poso-(0.4*trexon_poso);
+}
 
 }

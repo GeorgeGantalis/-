@@ -13,11 +13,6 @@ public class Ktirio extends Koutaki{
 		Zoes_ktiriou = zoes_ktiriou;
 	}
 
-	public void DecZwes()
-	{
-		Zoes_ktiriou--;
-	}
-	
 	public int getPoso() {
 		return poso;
 	}
@@ -28,6 +23,9 @@ public class Ktirio extends Koutaki{
 
 	public int getZoes_ktiriou() {
 		return Zoes_ktiriou;
+	}
+	public void DecZoes(){
+		this.Zoes_ktiriou--;
 	}
 	
 	public boolean diarkia_anamonis_ktiriou()
@@ -59,7 +57,7 @@ public class Ktirio extends Koutaki{
 	}
 
 	@Override
-	public void epilogi_1or2or3() {
+	public void epilogi_1or2or3(Paiktis p) {
 		// TODO Auto-generated method stub
 		
 	}

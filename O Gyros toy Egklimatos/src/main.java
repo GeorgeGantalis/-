@@ -6,12 +6,12 @@ import java.util.Random;
 public class main {
 
 	public static void main(String[] args) {
-      ArrayList <String> kartesKlefti = new ArrayList<String>();
+      ArrayList <String> kartesKlefti = new ArrayList<String>();              
       ArrayList <String> kartesAstunomou = new ArrayList<String>();
       
       
       
-        //Αρχικοποίηση της λίστας της κάρτες
+        //Αρχικοποίηση της λίστας  κάρτες
       
 		kartesKlefti.add("Κάρτα ασυλίας");
 		kartesKlefti.add("Βγες από την φυλακή! Χρησιμοποίησε αυτή την κάρτα όταν σε πιάσει ο αστυνόμος");
@@ -55,7 +55,7 @@ public class main {
 		kartesAstunomou.add("Πήγαινε στο στρατόπεδο");
 		kartesAstunomou.add("Ασυλία σε περίπτωση που σε πιάσει ο κλέφτης");
       
-      
+      // Αρχικοποίηση του ταμπλό του παιχνιδιού (όλα τα κουτάκια)
 	    
 		Afetiria favela_0 = new Afetiria ("Favela");
 		Ktirio kiosk1_1 = new Ktirio ("Kiosk1",50000,0,1);
@@ -90,8 +90,9 @@ public class main {
 		Ktirio kiosk3_30 = new Ktirio ("kiosk3",50000,0,1);
 		Ktirio house11_31 = new Ktirio ("house11",100000,0,1);
 		
-        
-		tablo t = new tablo("basic tablo");//Δημιουργία του βασικού ταμπλού που θα περιέχει ολα τα κτίρια.
+		//Δημιουργία του βασικού ταμπλού που θα περιέχει ολα τα κτίρια.
+		
+		tablo t = new tablo("basic tablo");
 
 		t.addKoutaki(favela_0);
 		t.addKoutaki(kiosk1_1);
@@ -128,7 +129,7 @@ public class main {
 	    
 	    
 
-	     new Screen1(t);
+	     new Screen1(t);         
 	    
 	    
 	}

@@ -88,7 +88,7 @@ public class Screen2 extends JFrame{
 		
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
 		this.setSize(875,730);  //διαστάσεις
-		this.setTitle("My first Frame!"); //ονομασία
+		this.setTitle("Ο γύρος του εγκλήματος"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 
@@ -100,7 +100,7 @@ public class Screen2 extends JFrame{
 		
 			ArrayList<Paiktis> paiktes = new ArrayList<Paiktis>();
 			
-			String name1 = textField.getText();
+			String name1 = textField.getText();            
 			String name2 = textField_1.getText();
 			String name3 = textField_2.getText();
 			String name4 = textField_3.getText();
@@ -110,21 +110,25 @@ public class Screen2 extends JFrame{
 			
 			if(e.getActionCommand().equals("ENARXI")) {
 				
-				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4,16); 
-				Astinomikos astinomikos2 = new Astinomikos (name2,16,0,4,16); 
+				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4,0,0); //Εκχώρισει ονομάτων
+				Astinomikos astinomikos2 = new Astinomikos (name2,16,0,4,0,0); 
 
-				Kleftis kleftis1 = new Kleftis(name3,0,0,4,0,0,0);
-				Kleftis kleftis2 = new Kleftis(name4,0,0,4,0,0,0);
+				Kleftis kleftis1 = new Kleftis(name3,0,0,4,0,0,0,0);
+				Kleftis kleftis2 = new Kleftis(name4,0,0,4,0,0,0,0);
 				
 				tablPaix.addPlayer(kleftis1);
 				tablPaix.addPlayer(astinomikos1);
 				tablPaix.addPlayer(kleftis2);
 				tablPaix.addPlayer(astinomikos2);
+				tablPaix.getPaiktes().get(0).EnimerosiXY(113, 549);          //Αρχικές συντεταγμένες παικτών
+				tablPaix.getPaiktes().get(1).EnimerosiXY(700, 130);
+				tablPaix.getPaiktes().get(2).EnimerosiXY(115, 551);
+				tablPaix.getPaiktes().get(3).EnimerosiXY(702, 132);
 				
 				
 
-
-				new Table(paiktes,tablPaix);
+					
+				new Table(tablPaix);
 				setVisible(false);
 	
 				}

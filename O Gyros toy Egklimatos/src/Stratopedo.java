@@ -10,16 +10,19 @@ public class Stratopedo extends Koutaki{
 		super(onoma);
 	}
 	
-	public void epilogi_1or2or3() {
+	public void epilogi_1or2or3(Paiktis p) {
 		Random rand = new Random();
 		int apotelesma = rand.nextInt(3) + 1;
 		//System.out.println(apotelesma);
 		
 	    if(apotelesma == 1 ) {
 			 JOptionPane.showMessageDialog(null,"Κέρδισες 1.000.000 $");
+			 p.IncTrexonPoso(1000000);
+			 p.IncArithmosListeiwn();
 		}
 		else if(apotelesma ==2 ) {
 			JOptionPane.showMessageDialog(null,"Έχασες μια ζωή");
+			p.DecZoes();
 		}
 		else if(apotelesma ==3 ) {
 			JOptionPane.showMessageDialog(null,"Συνεχίζεις το παιχνίδι");
@@ -70,9 +73,8 @@ public class Stratopedo extends Koutaki{
 	}
 
 	@Override
-	public void DecZwes() {
+	public void DecZoes() {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

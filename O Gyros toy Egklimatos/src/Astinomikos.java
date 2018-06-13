@@ -1,8 +1,8 @@
 
 public class Astinomikos extends Paiktis{
 
-	public Astinomikos(String name, int thesi, int poso, int zoes,int proigoumeniThesi) {
-		super(name, thesi, poso, zoes,proigoumeniThesi);
+	public Astinomikos(String name, int thesi, int poso, int zoes,int cordX,int cordY) {
+		super(name, thesi, poso, zoes,cordX,cordY);
 	}
 
 	
@@ -12,7 +12,7 @@ public class Astinomikos extends Paiktis{
 		super.printInfo();
 	}
 	
-	public int getTrexon_poso() {
+	public double getTrexon_poso() {
 		return 0;
 	}
 
@@ -40,8 +40,28 @@ public class Astinomikos extends Paiktis{
 	 {
 	 }
 
+
+
+
+
 	@Override
-	public void IncTrexonPoso() {
+	public void PerasmaFavela() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void IncTrexonPoso(double poso_listias) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void DromakiMiosi() {
 		// TODO Auto-generated method stub
 		
 	}

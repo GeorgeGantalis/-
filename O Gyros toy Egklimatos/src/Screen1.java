@@ -81,7 +81,7 @@ public class Screen1 extends JFrame{
 		
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
 		this.setSize(875,730);  //διαστάσεις
-		this.setTitle("My first Frame!"); //ονομασία
+		this.setTitle("Ο γύρος του εγκλήματος"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 
@@ -92,17 +92,17 @@ public class Screen1 extends JFrame{
 		class ButtonListener implements ActionListener {
 			public void actionPerformed(ActionEvent e) {
 			
-			if (e.getActionCommand().equals("PAIKSE")) {
-				     new Screen2(tablPaix);
+			if (e.getActionCommand().equals("PAIKSE")) {         
+				     new Screen2(tablPaix);                   
 				     setVisible(false);
 			}
 			
 			if(e.getActionCommand().equals("KANONES"))
 			{
-			  JOptionPane.showMessageDialog(null, "Κανονες");
+			  JOptionPane.showMessageDialog(null, "Κανονες");           // Εμφανίζονται οι κανόνες του παιχνιδιού
 			}
 			
-			if(e.getActionCommand().equals("EXODOS"))
+			if(e.getActionCommand().equals("EXODOS"))					// Εξοδος
 			{			
 				System.exit(0);
 			}

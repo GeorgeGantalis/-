@@ -78,14 +78,14 @@ private ArrayList <String> kartes_astunomou;
 
 
 	@Override
-	public void epilogi_1or2or3() {
+	public void epilogi_1or2or3(Paiktis p) {
 		// TODO Auto-generated method stub
 		
 	}
 
 
 	@Override
-	public void DecZwes() {
+	public void DecZoes() {
 		// TODO Auto-generated method stub
 		
 	}

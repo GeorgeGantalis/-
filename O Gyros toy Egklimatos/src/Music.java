@@ -14,6 +14,7 @@ public class Music {
     
     private int currentSongIndex;
     private  String filename;
+    private Clip clip;
     
    
     
@@ -23,7 +24,7 @@ public class Music {
             AudioInputStream ais = AudioSystem.getAudioInputStream(soundFile);
             AudioFormat format = ais.getFormat();
             DataLine.Info info = new DataLine.Info(Clip.class, format);
-            Clip clip = (Clip) AudioSystem.getLine(info);
+            clip = (Clip) AudioSystem.getLine(info);
             clip.open(ais);
             FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
             gainControl.setValue(-0f); 
@@ -31,8 +32,7 @@ public class Music {
             clip.loop(clip.LOOP_CONTINUOUSLY);              
             
         }catch(Exception e){
-            e.printStackTrace();
-            System.out.println("PRoblem");
+           
         }
     }
 
@@ -52,6 +52,9 @@ public class Music {
          }catch(Exception e){
              e.printStackTrace();
          }
+    }
+    public void stop(){
+    	clip.stop();
     }
     
 

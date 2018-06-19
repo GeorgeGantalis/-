@@ -1,3 +1,4 @@
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Ktirio extends Koutaki{
@@ -58,6 +59,13 @@ public class Ktirio extends Koutaki{
 
 	@Override
 	public void epilogi_1or2or3(Paiktis p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int EktelesiKartas(int arithmos_kartas, Paiktis paiktis,String karta) {
+		return 0;
 		// TODO Auto-generated method stub
 		
 	}

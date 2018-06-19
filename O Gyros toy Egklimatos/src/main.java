@@ -13,47 +13,46 @@ public class main {
       
         //Αρχικοποίηση της λίστας  κάρτες
       
-		kartesKlefti.add("Κάρτα ασυλίας");
-		kartesKlefti.add("Βγες από την φυλακή! Χρησιμοποίησε αυτή την κάρτα όταν σε πιάσει ο αστυνόμος");
+		
+		kartesKlefti.add("Πήγαινε 3 τετράγωνα μπροστά");																									
+		kartesKlefti.add("Πήγαινε 2 τετράγωνα μπροστά");
+		kartesKlefti.add("Πήγαινε  1 τετράγωνο μπροστά");
+		kartesKlefti.add("Πήγαινε 3 τετράγωνα μπροστά");
+		kartesKlefti.add("Πήγαινε 2 τετράγωνα μπροστά");
+		kartesKlefti.add("Πήγαινε  1 τετράγωνο μπροστά");
+		kartesKlefti.add("Πήγαινε 3 τετράγωνα πίσω");
+		kartesKlefti.add("Πήγαινε 2 τετράγωνα πίσω");
+		kartesKlefti.add("Πήγαινε 1 τετράγωνο πίσω");
+		kartesKlefti.add("Πήγαινε 3 τετράγωνα πίσω");
+		kartesKlefti.add("Πήγαινε 2 τετράγωνα πίσω");
+		kartesKlefti.add("Πήγαινε 1 τετράγωνο πίσω");
 		kartesKlefti.add("Πήγαινε στη φαβέλα");
 		kartesKlefti.add("Χάνεις την σειρά σου");
 		kartesKlefti.add("Χάνεις το 25% των χρημάτων που κουβαλάς!");
-		kartesKlefti.add("Αυξάνεις κατά 20% των χρημάτων που κουβαλάς!");
-		kartesKlefti.add("Πήγαινε στο Δημαρχείο");
-		kartesKlefti.add("Ξαναρίξε το ζάρι");
-		kartesKlefti.add("Προχώρα 3 τετράγωνα μπροστά");
-		kartesKlefti.add("Προχώρα 2 τετράγωνα μπροστά");
-		kartesKlefti.add("Ποχώρα  1 τετράγωνο μπροστά");
-		kartesKlefti.add("Πήγαινε 3 τετράγωνα πίσω");
-		kartesKlefti.add("Πήγαινε 2 τετράγωνα πίσω");
-		kartesKlefti.add("Πήγαινε 1 τετράγωνο πίσω");
-		kartesKlefti.add("Προχώρα 3 τετράγωνα μπροστά");
-		kartesKlefti.add("Προχώρα 2 τετράγωνα μπροστά");
-		kartesKlefti.add("Ποχώρα  1 τετράγωνο μπροστά");
-		kartesKlefti.add("Πήγαινε 3 τετράγωνα πίσω");
-		kartesKlefti.add("Πήγαινε 2 τετράγωνα πίσω");
-		kartesKlefti.add("Πήγαινε 1 τετράγωνο πίσω");
+		kartesKlefti.add("Αυξάνεις κατά 20% τα χρήματα που κουβαλάς!");
+		kartesKlefti.add("Πήγαινε στο Δημαρχείο(Δεν περνάς από την Φαβέλα, δεν διασφαλίζεις τα χρήματα σου)");
 		
-		kartesAstunomou.add("Προχώρα 3 τετράγωνα μπροστά");
-		kartesAstunomou.add("Προχώρα 2 τετράγωνα μπροστά");
-		kartesAstunomou.add("Ποχώρα  1 τετράγωνο μπροστά");
+		
+		kartesAstunomou.add("Πήγαινε 3 τετράγωνα μπροστά");
+		kartesAstunomou.add("Πήγαινε 2 τετράγωνα μπροστά");
+		kartesAstunomou.add("Πήγαινε  1 τετράγωνο μπροστά");
+		kartesAstunomou.add("Πήγαινε 3 τετράγωνα μπροστά");
+		kartesAstunomou.add("Πήγαινε 2 τετράγωνα μπροστά");
+		kartesAstunomou.add("Πήγαινε  1 τετράγωνο μπροστά");
 		kartesAstunomou.add("Πήγαινε 3 τετράγωνα πίσω");
 		kartesAstunomou.add("Πήγαινε 2 τετράγωνα πίσω");
 		kartesAstunomou.add("Πήγαινε 1 τετράγωνο πίσω");
-		kartesAstunomou.add("Προχώρα 3 τετράγωνα μπροστά");
-		kartesAstunomou.add("Προχώρα 2 τετράγωνα μπροστά");
-		kartesAstunomou.add("Ποχώρα  1 τετράγωνο μπροστά");
 		kartesAstunomou.add("Πήγαινε 3 τετράγωνα πίσω");
 		kartesAstunomou.add("Πήγαινε 2 τετράγωνα πίσω");
 		kartesAstunomou.add("Πήγαινε 1 τετράγωνο πίσω");
-		kartesAstunomou.add("Χάνεις την σειρά σου");
-		kartesAstunomou.add("Χάνεις την σειρά σου");
-		kartesAstunomou.add("Ξαναρίξε το ζάρι");
-		kartesAstunomou.add("Ξαναρίξε το ζάρι");
-		kartesAstunomou.add("Πήγαινε σε μία απο τις δύο ελεύθερες σταθμεύσεις");
-		kartesAstunomou.add("Πήγαινε σε μία απο τις δύο ελεύθερες σταθμεύσεις");
 		kartesAstunomou.add("Πήγαινε στο στρατόπεδο");
-		kartesAstunomou.add("Ασυλία σε περίπτωση που σε πιάσει ο κλέφτης");
+		kartesAstunomou.add("Χάνεις την σειρά σου");
+		kartesAstunomou.add("Χάνεις την σειρά σου");
+		kartesAstunomou.add("Πήγαινε σε μία απο τις δύο ελεύθερες σταθμεύσεις");
+		kartesAstunomou.add("Πήγαινε σε μία απο τις δύο ελεύθερες σταθμεύσεις");
+		
+		
+		
       
       // Αρχικοποίηση του ταμπλό του παιχνιδιού (όλα τα κουτάκια)
 	    

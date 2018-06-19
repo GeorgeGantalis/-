@@ -1,9 +1,11 @@
+import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public abstract class Koutaki {
+public abstract class Koutaki extends JFrame{
 	
 	private String onoma;
 
@@ -24,6 +26,7 @@ public abstract class Koutaki {
   abstract public ArrayList<String> getKartes_klefti();
   abstract public ArrayList<String> getKartes_astunomou();
   abstract public int Epilogi_Kartas( Paiktis p);
+  abstract public int EktelesiKartas (int arithmos_kartas,Paiktis paiktis,String karta);
   abstract public void epilogi_1or2or3(Paiktis p);
 	
 }

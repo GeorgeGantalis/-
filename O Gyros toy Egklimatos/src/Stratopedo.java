@@ -1,3 +1,4 @@
+import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -13,11 +14,10 @@ public class Stratopedo extends Koutaki{
 	public void epilogi_1or2or3(Paiktis p) {
 		Random rand = new Random();
 		int apotelesma = rand.nextInt(3) + 1;
-		//System.out.println(apotelesma);
 		
 	    if(apotelesma == 1 ) {
-			 JOptionPane.showMessageDialog(null,"Κέρδισες 1.000.000 $");
-			 p.IncTrexonPoso(1000000);
+			 JOptionPane.showMessageDialog(null,"Κέρδισες 500.000 $");
+			 p.IncTrexonPoso(500000);
 			 p.IncArithmosListeiwn();
 		}
 		else if(apotelesma ==2 ) {
@@ -74,6 +74,13 @@ public class Stratopedo extends Koutaki{
 
 	@Override
 	public void DecZoes() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int EktelesiKartas(int arithmos_kartas, Paiktis paiktis,String karta) {
+		return 0;
 		// TODO Auto-generated method stub
 		
 	}

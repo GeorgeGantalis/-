@@ -65,6 +65,14 @@ public class Astinomikos extends Paiktis{
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+	@Override
+	public void setTrexon_poso(double x) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }

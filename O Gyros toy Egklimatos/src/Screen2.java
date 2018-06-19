@@ -25,11 +25,13 @@ public class Screen2 extends JFrame{
 	private JButton btnEnarksi;
 	private JButton btnPiso;
 	private tablo tablPaix;
+	private Music music;
 	
 	public Screen2(tablo t) {
 		tablPaix=t;
-		
 		setSize(new Dimension(875, 730));
+		music=new Music("start.wav");
+		
 		getContentPane().setLayout(null);
 		
 		JButton btnPiso = new JButton("\u03A0\u0399\u03A3\u03A9");
@@ -86,8 +88,10 @@ public class Screen2 extends JFrame{
 		btnEnarksi.addActionListener(listener);
 		btnPiso.addActionListener(listener);
 		
+		this.setResizable(false);
 		this.setVisible(true);   //κάνει το παράθυρο ορατό στην οθόνη
-		this.setSize(875,730);  //διαστάσεις
+		this.setSize(865,720);  //διαστάσεις
+		
 		this.setTitle("Ο γύρος του εγκλήματος"); //ονομασία
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
@@ -98,6 +102,8 @@ public class Screen2 extends JFrame{
 	class ButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 		
+			
+			ArrayList<String> names = new ArrayList<String>();
 			ArrayList<Paiktis> paiktes = new ArrayList<Paiktis>();
 			
 			String name1 = textField.getText();            
@@ -105,12 +111,50 @@ public class Screen2 extends JFrame{
 			String name3 = textField_2.getText();
 			String name4 = textField_3.getText();
 			
-			;
-
+			names.add(name1);
+			names.add(name2);
+			names.add(name3);
+			names.add(name4);
 			
+			//Ακολουθέι έλεγχος για το εαν τα ονόματα έχουν σωστό μέγεθος
+			boolean isThenamestrue = true;
+			
+			if(name1.length()<=1 || name1.length()>=9)
+			{
+				textField.setText(null);
+				isThenamestrue=false;
+			}
+			
+			if(name2.length()<=1 || name2.length()>=9)
+			{
+				textField_1.setText(null);
+				isThenamestrue=false;
+			}
+			
+			if(name3.length()<=1 || name3.length()>=9)
+			{
+				textField_2.setText(null);
+				isThenamestrue=false;
+			}
+
+			if(name4.length()<=1 || name4.length()>=9)
+			{
+				textField_3.setText(null);
+				isThenamestrue=false;
+			}
+			
+			
+			
+       
+       	
 			if(e.getActionCommand().equals("ENARXI")) {
-				
-				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4,0,0); //Εκχώρισει ονομάτων
+				if(isThenamestrue == false)
+				 {
+				    JOptionPane.showMessageDialog(null, "Το όνομα πρέπει να έχει από 2 έως 8 χαρακτηρες! ", "Error", JOptionPane.ERROR_MESSAGE);
+					//JOptionPane.showMessageDialog(null, "Μεγάλο ονομα.");
+				 }
+				if(isThenamestrue){
+				Astinomikos astinomikos1 = new Astinomikos (name1,16,0,4,0,0); //Εκχώριση ονομάτων
 				Astinomikos astinomikos2 = new Astinomikos (name2,16,0,4,0,0); 
 
 				Kleftis kleftis1 = new Kleftis(name3,0,0,4,0,0,0,0);
@@ -129,18 +173,23 @@ public class Screen2 extends JFrame{
 
 					
 				new Table(tablPaix);
+				music.stop();
 				setVisible(false);
+				dispose();
 	
 				}
+			}
 			if(e.getActionCommand().equals("PISO")){
 			    new Screen1(tablPaix);
+			    music.stop();
 			    setVisible(false);
+			    dispose();
 			    }
 	
             //  for(int i=0; i<paiktes.size(); i++) {
             	//  paiktes.get(i).printInfo();}
-              
-          
+            
+			
 			
 		}
 	}

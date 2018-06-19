@@ -18,6 +18,10 @@ public double getTrexon_poso() {
 	return trexon_poso;
 }
 
+public void setTrexon_poso(double x){
+	trexon_poso=x;
+}
+
 
 public int getArithmos_listiwn() {
 	return arithmos_listiwn;
@@ -50,7 +54,7 @@ public void PerasmaFavela()
 	trexon_poso=0;
 }
 
-public void DromakiMiosi(){
+public void DromakiMiosi(){                           //pairnei to dromaki
 	trexon_poso=trexon_poso-(0.4*trexon_poso);
 }
 

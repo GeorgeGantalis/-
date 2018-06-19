@@ -102,15 +102,23 @@ public void EnimerosiThesiDromaki(int zari){
 }
 
 public boolean PaiktisIsDead(){
-	if(zoes==0){
-		return true;
-	}else 
+	if(zoes>0){
 		return false;
+	}else 
+	{
+		if(this instanceof Kleftis){
+			thesi=60;                 //thetoume tin thesi toy pakti ena megalo noymero gia na mn exoyme provlima stis sygkriseis 
+		}else
+			thesi=70;
+		
+		return true;
+	}
 }
 
 // abstrac μέθοδοι
 
 abstract public double getTrexon_poso();
+abstract public void setTrexon_poso(double x);
 abstract public int getArithmos_listiwn();
 abstract public void IncTrexonPoso(double poso_listias);
 abstract public void IncArithmosListeiwn();
